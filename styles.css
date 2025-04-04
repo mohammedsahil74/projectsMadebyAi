@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-link {
+    @apply text-white no-underline ml-4 text-sm opacity-80 transition-all duration-300 hover:opacity-100 hover:scale-110 hover:text-glow;
+  }
+
+  .profile-button {
+    @apply inline-flex items-center bg-white/10 text-white px-6 py-3 rounded-full mt-8 cursor-pointer transition-all duration-300 hover:bg-white/20 hover:scale-105 hover:shadow-glow;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  }
+  .shadow-glow {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+}
